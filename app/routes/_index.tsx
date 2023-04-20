@@ -1,5 +1,7 @@
 import type { V2_MetaFunction } from "@remix-run/react";
-import testImage from "../images/test.jpeg";
+import testJpeg from "../images/test.jpeg";
+import bigPng from "../images/a1.png";
+import { product } from "~/models/product.server";
 
 export const meta: V2_MetaFunction = () => {
   return [{ title: "New Remix App" }];
@@ -34,7 +36,13 @@ export default function Index() {
           </a>
         </li>
         <li>
-          <img src={testImage} alt="" />
+          <img src={testJpeg} alt="" />
+        </li>
+        <li>
+          <img src={bigPng} alt="" />
+        </li>
+        <li>
+          <img src={product.imgSrc} alt="" />
         </li>
       </ul>
     </div>
