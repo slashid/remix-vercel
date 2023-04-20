@@ -1,6 +1,5 @@
 import type { V2_MetaFunction } from "@remix-run/react";
 import testJpeg from "../images/test.jpeg";
-import bigPng from "../images/a1.png";
 import { product } from "~/models/prod";
 
 export const meta: V2_MetaFunction = () => {
@@ -37,9 +36,6 @@ export default function Index() {
         </li>
         <li>
           <img src={testJpeg} alt="" />
-        </li>
-        <li>
-          <img src={bigPng} alt="" />
         </li>
         <li>
           <img src={product.imgSrc} alt="" />
