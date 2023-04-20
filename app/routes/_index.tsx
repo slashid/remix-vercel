@@ -1,7 +1,7 @@
 import type { V2_MetaFunction } from "@remix-run/react";
 import testJpeg from "../images/test.jpeg";
 import bigPng from "../images/a1.png";
-import { product } from "~/models/product.server";
+import { product } from "~/models/prod";
 
 export const meta: V2_MetaFunction = () => {
   return [{ title: "New Remix App" }];
